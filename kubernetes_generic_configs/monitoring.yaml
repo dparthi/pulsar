@@ -62,11 +62,14 @@ data:
 
 ---
 
-apiVersion: apps/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
     name: prometheus
 spec:
+    selector:
+        matchLabels:
+          app: pulsar
     replicas: 1
     template:
         metadata:
@@ -115,11 +118,14 @@ spec:
 ---
 ## GRAFANA
 
-apiVersion: apps/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
     name: grafana
 spec:
+    selector:
+        matchLabels:
+          app: pulsar
     replicas: 1
     template:
         metadata:
@@ -159,11 +165,14 @@ spec:
 ---
 ## Include detailed Pulsar dashboard
 
-apiVersion: apps/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
     name: pulsar-dashboard
 spec:
+    selector:
+        matchLabels:
+          app: pulsar
     replicas: 1
     template:
         metadata:
