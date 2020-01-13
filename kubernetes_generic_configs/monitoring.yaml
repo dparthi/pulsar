@@ -182,7 +182,7 @@ spec:
         spec:
             containers:
               - name: grafana
-                image: apachepulsar/pulsar-dashboard:latest
+                image: apachepulsar/pulsar-dashboard:2.4.2
                 ports:
                   - containerPort: 80
                 env:

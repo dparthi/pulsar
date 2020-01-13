@@ -1,0 +1,6 @@
+data
+.idea
+target
+*.iml
+hs_err_*
+
