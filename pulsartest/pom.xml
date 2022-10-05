@@ -21,7 +21,7 @@
     </build>
 
     <properties>
-        <pulsar.version>2.4.1</pulsar.version>
+        <pulsar.version>2.7.5</pulsar.version>
     </properties>
 
     <dependencies>
